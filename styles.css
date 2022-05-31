@@ -97,6 +97,11 @@ header {
     font-size: 30px;
 }
 
+.badge:hover,
+.badge:active {
+    opacity: 0.9;
+}
+
 .opacity-50 {
     opacity: 0.5;
 }
@@ -154,4 +159,24 @@ header {
     padding-top: 10px;
     padding-left: 10px;
     border-top-style: rounded;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #c271ff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
